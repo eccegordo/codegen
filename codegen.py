@@ -41,28 +41,28 @@ codeOutput = ''
 codeOutput += T_Header.getCodePatternHeader(params)
 codeOutput += T_Implementation.getCodePatternSynthesize(params)
 
-# print T_Header.getCodePatternHeader(params)
-# print T_Implementation.getCodePatternSynthesize(params)
+print T_Header.getCodePatternHeader(params)
+print T_Implementation.getCodePatternSynthesize(params)
 
-# fileName = "code.c"
-# F_Helpers.writeTemplateFile(fileName, codeOutput)
+fileName = "code.c"
+F_Helpers.writeTemplateFile(fileName, codeOutput)
 
-inFile = "inputs/input_text.txt"
-myList = F_Helpers.parseTextFile(inFile)
-
-print myList
-
-from inputs import input_code
-
-myData = input_code.inputData
-
-# inFileCode = "input/input_code.py"
-# myData = F_Helpers.loadCodeFromFile(inFileCode)
-
-for item in myData:
-    print item
-
-for item in myList:
-    print item
-# print myData[2]
+# inFile = "inputs/input_text.txt"
+# myList = F_Helpers.parseTextFile(inFile)
+# 
+# print myList
+# 
+# from inputs import input_code
+# 
+# myData = input_code.inputData
+# 
+# # inFileCode = "input/input_code.py"
+# # myData = F_Helpers.loadCodeFromFile(inFileCode)
+# 
+# for item in myData:
+#     print item
+# 
+# for item in myList:
+#     print item
+# # print myData[2]
 
